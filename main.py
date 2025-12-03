@@ -1,7 +1,6 @@
 
 ## PURPOSE: Drives the program and contains a menu system
 
-from re import S
 from schedule import Schedule
 
 def main():
@@ -49,3 +48,6 @@ def main():
 
         else:
             print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()
