@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b6e417ea-7ec5-4217-a559-7014f52ba4c2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>CourseSchedule_DAngeloFrancis.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="CourseSchedule_DAngeloFrancis.py" />
+    <Compile Include="main.py" />
+    <Compile Include="schedule.py" />
+    <Compile Include="schedule_item.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
