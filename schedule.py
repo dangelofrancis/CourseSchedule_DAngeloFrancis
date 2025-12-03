@@ -3,7 +3,7 @@
 # store, search, and display the schedule
 
 from schedule_item import ScheduleItem
-import cvs
+import csv
 
 class Schedule:
     def _init_(self):
@@ -35,7 +35,7 @@ class Schedule:
             if item.instructor.split(",")[0].lower() == last_name.lower()]
     
     def load_from_csv(self):
-        with open("filename", encoding="utf-8-sig", newline="") as csvfile:
+        with open("courses.csv", encoding="utf-8-sig", newline="") as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
                item = ScheduleItem(
