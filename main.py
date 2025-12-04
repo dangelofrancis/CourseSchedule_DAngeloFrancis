@@ -1,5 +1,11 @@
 
-## PURPOSE: Drives the program and contains a menu system
+# PROJECT TITLE: Course Schedule
+# PROGRAMMER: D'Angelo Francis
+# DUE DATE: 11/21/2025
+# REQUIREMENTS: 
+
+# FILE NAME: main.py 
+# REQUIREMENTS: Drives the program and contains a menu system
 
 from schedule import Schedule
 

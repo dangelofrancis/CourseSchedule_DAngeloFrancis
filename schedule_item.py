@@ -1,6 +1,6 @@
 
-## PURPOSE: Defines the ScheduleItem class
-## to hold individual course information
+# FILE NAME: schedule_item.py
+# REQUIREMENTS: Defines the ScheduleItem dataclass
 
 from dataclasses import dataclass
 
@@ -17,11 +17,19 @@ class ScheduleItem:
     instructor: str
 
     def get_key(self) -> str: 
-        " Post: Returns a unique string key"
+        """
+            Pre: None
+
+            Post: Returns a unique string key
+        """
         return f"{self.subject}_{self.catalog}_{self.section}"
 
     def print(self):
-        " Post: Prints the formatted details"
+        """
+            Pre: None
+
+            Post: Prints the formatted details
+        """
         print(f"{self.subject:<8} {self.catalog:<8} {self.section:<8} "
               f"{self.component:<10} {self.session:<6} {self.units:<5} "
               f"{self.totEnrl:<8} {self.capEnrl:<8} {self.instructor}")
